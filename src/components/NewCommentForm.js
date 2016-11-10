@@ -2,8 +2,6 @@ import React, { Component, PropTypes } from 'react'
 
 class NewCommentForm extends Component {
     static propTypes = {
-        articleId: PropTypes.string,
-        addComment: PropTypes.func.isRequired
     };
 
     state = {
@@ -17,9 +15,7 @@ class NewCommentForm extends Component {
 
     handleSubmit = ev => {
         ev.preventDefault()
-        const { addComment, articleId } = this.props
-        addComment(this.state, articleId)
-
+        console.log('---', this.state)
         this.setState({
             user: '',
             text: ''
@@ -30,7 +26,7 @@ class NewCommentForm extends Component {
         return (
             <form onSubmit = {this.handleSubmit}>
                 comment: <input type="text" value={this.state.text} onChange = {this.handleChange('text')}/>
-                user: <input type="text" value={this.state.user} onChange = {this.handleChange('user')}/>
+                comment: <input type="text" value={this.state.user} onChange = {this.handleChange('user')}/>
                 <input type = "submit"/>
             </form>
         )
