@@ -26,3 +26,38 @@ links:
 * https://github.com/webpack/css-loader
 * https://facebook.github.io/react/docs/animation.html
 * https://github.com/gpbl/react-day-picker
+
+##ДЗ 4.1 Для SelectFilter достать articles из стора
+##ДЗ 4.2 Хранить значения фильтров в сторе(создать отдельный редюсер)
+##ДЗ 4.3 В ArticleList показывать только отфильтрованные статьи
+view -> AC -> store.dispatch -> reducer -> store -> store.subscribe -> view
+
+links:
+* https://slides.com/romaniakobchuk/deck-9-10-11-13-16
+* http://redux.js.org/
+
+##ДЗ 5.1 Написать мидлвару для генерации id
+##ДЗ 5.2 Добавить функционал добавления коммента к статье
+##ДЗ 5.3 Хранить статьи и комменты в виде Immutable.Record
+##ДЗ 5.4 Посмотреть вторую часть скринкаста по Flux
+
+links:
+* https://github.com/paularmstrong/normalizr
+* https://facebook.github.io/immutable-js/docs/
+* https://slides.com/romaniakobchuk/deck-9-10-11-13-16/live#/7
+* http://redux.js.org/docs/advanced/Middleware.html
+* https://github.com/gaearon/redux-devtools
+* https://github.com/zalmoxisus/redux-devtools-extension
+
+##ДЗ 6.1 При открытии списка комментов читать их из API(/api/comment?article=56c782f17b4e0ba78c7ad717)
+##ДЗ 6.2 Написать аналогичный AC с использованием redux-thunk
+##ДЗ 6.3 Показывать лоадер во время загрузки комментов
+
+links:
+* https://github.com/xgrommx/awesome-redux
+* https://github.com/evgenyrodionov/redux-logger
+* https://www.npmjs.com/package/redux-promise
+* https://github.com/ashaffer/redux-multi
+* https://github.com/gaearon/redux-thunk
+
+##ДЗ 7 Сделать роут (/comments/(page)) для пагинации всех доступных комментов(по 5 на страницу), api: /api/comment?limit=5&offset=10

@@ -1,6 +1,5 @@
-import React from 'react'
 import { render } from 'react-dom'
 import Container from './components/Container'
-import { articles } from './fixtures'
+import routes from './routes'
 
-render(<Container articles = {articles}/>, document.getElementById('container'))
+render(routes, document.getElementById('container'))
